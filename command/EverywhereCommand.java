@@ -4,6 +4,6 @@ public class EverywhereCommand implements Command {
     }
 
     public void execute(){
-        
+        MilitaryCadence.singEverywhereIGo();
     }
 }
