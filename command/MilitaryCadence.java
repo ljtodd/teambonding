@@ -3,20 +3,11 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 import java.io.File;
 import java.io.FileNotFoundException;
-/**
- * This class takes the file and splits the lyrics into lines and reads out the line for a bit before 
- * changing.
- */
 public class MilitaryCadence {
-    /**
-     * Nothing is needed in the constructor
-     */
     public MilitaryCadence() {
 
     }
-    /**
-     * 
-     */
+
     public static void singIDontKnow() {
         ArrayList<String> iDontKnowLyrics = readFile("command/idontknow.txt");
         printCadence(iDontKnowLyrics);
