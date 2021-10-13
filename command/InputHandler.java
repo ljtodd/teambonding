@@ -4,16 +4,15 @@ public class InputHandler {
     private ArrayList<Command> commands;
 
     public InputHandler(MilitaryCadence cadence){
-
+        commands = new ArrayList<Command>();
+        commands.add(new IDontKnowCommand(cadence));
+        commands.add(new InArmyCommand(cadence));
+        commands.add(new EverywhereCommand(cadence));
     }
 
     public boolean playCadence(int num){
-        if(num < commands.size() - 1){
-            /**
-             * Sorry Stopped in the middle of this. Cant figure out why were using
-             * an array list and not just take the num and check it against if statements
-             * but whatever. Ill work on it tomorrow
-             */
+        if(num >= 0 && num < commands.size()) {
+            commands.get(num).execute();
             return true;
         }
         else{

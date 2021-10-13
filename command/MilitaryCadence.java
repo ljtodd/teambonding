@@ -8,17 +8,17 @@ public class MilitaryCadence {
 
     }
 
-    public void singIDontKnow() {
-        ArrayList<String> iDontKnowLyrics = readFile("idontknow.txt");
+    public static void singIDontKnow() {
+        ArrayList<String> iDontKnowLyrics = readFile("command/idontknow.txt");
         printCadence(iDontKnowLyrics);
     }
 
-    public void singEverywhereIGo() {
-        ArrayList<String> everywhereIGoLyrics = readFile("idontknow.txt");
+    public static void singEverywhereIGo() {
+        ArrayList<String> everywhereIGoLyrics = readFile("everywhere.txt");
         printCadence(everywhereIGoLyrics);
     }
 
-    public void singInArmy() {
+    public static void singInArmy() {
         ArrayList<String> inArmyLyrics = readFile("inarmy.txt");
         printCadence(inArmyLyrics);
     }
@@ -46,7 +46,7 @@ public class MilitaryCadence {
         for(String line : song) {
             System.out.println(line);
             try {
-                TimeUnit.MILLISECONDS.sleep(100);
+                TimeUnit.MILLISECONDS.sleep(500);
             }
             catch (InterruptedException e) {
                 e.printStackTrace();
