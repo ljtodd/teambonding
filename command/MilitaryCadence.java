@@ -11,6 +11,9 @@ import java.util.concurrent.TimeUnit;
 import java.io.File;
 import java.io.FileNotFoundException;
 
+/**
+ * Handles the reading and printing of all the cadences when executed
+ */
 public class MilitaryCadence {
     public MilitaryCadence() {
 
