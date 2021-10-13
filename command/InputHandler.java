@@ -15,7 +15,8 @@ public class InputHandler {
             commands.get(num).execute();
             return true;
         }
-        else{
+        else {
+            System.out.println("Invalid input");
             return false;
         }
     }
